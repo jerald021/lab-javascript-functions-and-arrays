@@ -1,22 +1,38 @@
 // Iteration #1: Find the maximum
-function maxOfTwoNumbers() {}
-
+// Implement the function maxOfTwoNumbers that takes two numbers as
+// arguments and returns the largest.
+function maxOfTwoNumbers(num1, num2) {
+  if(num1 >= num2){
+    return num1;
+  }
+  else{
+    return num2;
+  }  
+}
+console.log(maxOfTwoNumbers(51,21));
 
 
 // Iteration #2: Find longest word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
-
-function findLongestWord() {}
-
+function findLongestWord(list) {
+  for (let i= 0; i<= list.length;i++){
+    return console.log((i));        
+  }
+}
+console.log(findLongestWord(words));
 
 
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
-
-function sumNumbers() {}
-
-
-
+function sumNumbers(n) {
+  let result = 0;
+  for(let i = 0; i < n.length; i++){
+     result = result + n[i];     
+  }
+  return result;
+}
+console.log(sumNumbers(numbers));
+/*
 // Iteration #3.1 Bonus:
 function sum() {}
 
@@ -112,7 +128,7 @@ function greatestProduct() {}
 
 
 // The following is required to make unit tests work.
-/* Environment setup. Do not modify the below code. */
+/* Environment setup. Do not modify the below code. 
 if (typeof module !== 'undefined') {
   module.exports = {
     maxOfTwoNumbers,
@@ -128,3 +144,4 @@ if (typeof module !== 'undefined') {
     greatestProduct
   };
 }
+*/
